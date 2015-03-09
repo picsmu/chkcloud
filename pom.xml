@@ -3,7 +3,8 @@
   <groupId>mu.pics</groupId>
   <artifactId>chkcloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
+  <packaging>pom</packaging>
+  
 	<repositories>
 		<repository>
 			<id>gdata-maven-github</id>
@@ -12,6 +13,12 @@
 		</repository>	
 	</repositories>
 	
+	<modules>
+		<module>core</module>
+		<module>services</module>
+		<module>encoders</module>
+	</modules>
+
 	<build>
 		<resources>
 			<resource>
@@ -195,11 +202,13 @@
 			<version>4.1</version>
 		</dependency>
 		
+		<!-- 
 		<dependency>
 		    <groupId>org.mcavallo.opencloud</groupId>
 		    <artifactId>opencloud</artifactId>
 		    <version>0.3</version>
-		</dependency>	 
+		</dependency>
+		 -->	 
 		 
 	</dependencies>
   
